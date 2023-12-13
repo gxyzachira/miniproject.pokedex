@@ -19,6 +19,15 @@
   font-weight: bold;
   border: 0;
 }
+.bug:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .dragon{
   background-color: #6F35FC;
   font-size: 14px;
@@ -32,6 +41,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.dragon:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .fairy{
   background-color: #D685AD;
@@ -47,6 +64,14 @@
   font-weight: bold;
   border: 0;
 }
+.fairy:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .fire{
   background-color: #EE8130;
   font-size: 14px;
@@ -60,6 +85,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.fire:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .ghost{
   background-color:#735797;
@@ -75,6 +108,14 @@
   font-weight: bold;
   border: 0;
 }
+.ghost:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .ground{
   background-color:#E2BF65;
   font-size: 14px;
@@ -88,6 +129,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.ground:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .normal{
   background-color: #A8A77A;
@@ -103,6 +152,14 @@
   font-weight: bold;
   border: 0;
 }
+.normal:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .psychic{
   background-color: #F95587;
   font-size: 14px;
@@ -116,6 +173,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.psychic:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .steel{
   background-color: #B7B7CE;
@@ -131,6 +196,14 @@
   font-weight: bold;
   border: 0;
 }
+.steel:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .dark{
   background-color: #705746;
   font-size: 14px;
@@ -144,6 +217,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.dark:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .electric{
   background-color: #F7D02C;
@@ -159,6 +240,14 @@
   font-weight: bold;
   border: 0;
 }
+.electric:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .fighting{
   background-color: #C22E28;
   font-size: 14px;
@@ -172,6 +261,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.fighting:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .flying{
   background-color: #A98FF3;
@@ -187,6 +284,14 @@
   font-weight: bold;
   border: 0;
 }
+.flying:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .grass{
   background-color: #7AC74C;
   font-size: 14px;
@@ -200,6 +305,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.grass:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .ice{
   background-color: #96D9D6;
@@ -215,6 +328,14 @@
   font-weight: bold;
   border: 0;
 }
+.ice:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .poison{
   background-color: #A33EA1;
   font-size: 14px;
@@ -228,6 +349,14 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.poison:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .rock{
   background-color: #B6A136;
@@ -243,8 +372,16 @@
   font-weight: bold;
   border: 0;
 }
+.rock:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .water{
-  background-color: #6390F0;
+  background-color: #6390f0;
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -256,4 +393,12 @@
   cursor:pointer;
   font-weight: bold;
   border: 0;
+}
+.water:hover{
+  transform:scale(1.3);
+  font-style: italic;
+  border-radius: 20px;
+  color: white;
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
