@@ -1,0 +1,105 @@
+.body{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.body h3{
+    margin: 50px 0px 20px 0px;
+}  
+.span{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+}
+input.searchBar{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    padding: 0 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: 600;
+}
+.searchBar::placeholder{
+    color: #ff3f3f;
+    font-weight: 600;
+    font-size: 16px;
+}  
+button.clickSearch{
+    padding: 0 40px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background-color: #CC0000;
+}
+.pokemonData h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+}
+.pokemonResult .searchResult{
+    width: 50% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+}
+.searchResult img{
+    align-items: center;
+    width: 180px;
+    margin:10px 0px auto;
+}
+div.pokemonResult{
+    margin: 60px auto;
+    padding: 20px;
+    width: 600px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 3px 3cap 3px;
+}
+.errorHandle{
+    padding: 40px;
+    width: 50% auto;
+    align-items: center;
+    box-sizing: border-box;
+}
+.errorHandle h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+}
+.errorHandle button{
+    cursor: pointer;
+    padding:20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #CC0000;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px black;
+}

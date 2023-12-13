@@ -1,0 +1,12 @@
+h1.pokedex{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    background-color: #CC0000;
+    box-shadow: 3px 3px 3px black;
+    position: relative;
+}
