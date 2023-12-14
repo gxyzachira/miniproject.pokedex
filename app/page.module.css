@@ -43,6 +43,12 @@
   border-radius: 12px;
   max-height: max-content;
 }
+.pokeTypeMenu:hover{  
+  padding: 30px;
+  margin-left: 5%;
+  box-shadow: 3.5px 3.5px 3.5px rgb(0, 145, 255);
+}
+
 .pokeNameMenu {
   margin: auto;
   display: flex;
