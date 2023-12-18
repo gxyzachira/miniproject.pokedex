@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import axios, { AxiosError } from "axios"
 import Search from "./components/search/Search"
 
+
 type pokemonName = {
   pokeId:string,
   pokeName:string,

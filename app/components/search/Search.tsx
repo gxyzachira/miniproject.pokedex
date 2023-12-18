@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { SyntheticEvent } from "react";
 import { useState, useEffect } from "react";
 import styles from "./Search.module.css";
 import axios, { AxiosError } from "axios";
@@ -24,11 +24,11 @@ export default function Search() {
   const [error, setError] = useState<string|null>();
   const [loading,setLoading] = useState<boolean>(false)
 
-  const noResultData={
-
+  const errorRefresh=(e:SyntheticEvent<HTMLDivElement>) => {
+    window.location.reload()
   }
-  
-  async function fetchPokemonData() {
+
+  async function fetchPokemonData():Promise<void> {
     try {
       const res = await axios.get (
         `https://pokeapi.co/api/v2/pokemon/${searchWord.toLowerCase()}`
@@ -55,7 +55,7 @@ export default function Search() {
 
 
   useEffect(() => {
-    fetchPokemonData();
+    fetchPokemonData()
   }, []);
 
   return (
@@ -67,7 +67,7 @@ export default function Search() {
               type="text"
               value={searchWord}
               placeholder="Search by Name or Id(1 - 1017)"
-              onChange={(e) => {
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 e.preventDefault();
                 setSearchWord(e.target.value);
               }}
@@ -75,7 +75,7 @@ export default function Search() {
             <button className={styles.clickSearch} 
               disabled={loading}
               type="submit"
-              onClick={async (e) => {
+              onClick={async (e: React.MouseEvent<HTMLButtonElement>):Promise<void> => {
                 e.preventDefault();
                 await fetchPokemonData();
               }}
@@ -85,7 +85,7 @@ export default function Search() {
           </span>
 
           { loading == true ? (`Loading...`): error? 
-          (<div className={styles.errorHandle} onError={window.location.reload()} >
+          (<div className={styles.errorHandle} onError={errorRefresh} >
             <h2>{searchWord} has no data!</h2>
           </div> )  : (        
           <div className={styles.pokemonResult}>
