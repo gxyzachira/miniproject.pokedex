@@ -86,7 +86,7 @@ export default function Search() {
 
           { loading == true ? (`Loading...`): error? 
           (<div className={styles.errorHandle} > 
-            <button onClick={errorRefresh}>`{searchWord}` has no data!<br/> <MdOutlineRefresh className={styles.logo}/></button>
+            <button onClick={errorRefresh}>`{searchWord}` has no data.<br/>Reload here to search again.<br/> <MdOutlineRefresh className={styles.logo}/></button>
           </div> )  : (        
           <div className={styles.pokemonResult}>
             <div className={styles.pokemonData}>

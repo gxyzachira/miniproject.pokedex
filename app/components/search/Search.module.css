@@ -121,12 +121,12 @@ div.pokemonResult{
 }
 .errorHandle .logo{
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     margin-top: 15px;
-    background-color: #CC0000;
+    background-color: #000000;
     color: #ffffff;
-    border-radius: 17.5px;
+    border-radius: 22.5px;
 }
 .errorHandle button:hover{ 
     outline: none;
