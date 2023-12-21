@@ -5,9 +5,13 @@
   align-items: center;
   padding-bottom: 80px;
 }
-.body .aliceBlue{
+.body .aliceBlue1{
   background-color: aliceblue;
   padding:0px 0px;
+}
+.body .aliceBlue2{
+  background-color: aliceblue;
+  padding:20px 0px;
 }
 .pokemonData h2{
   display: flex;

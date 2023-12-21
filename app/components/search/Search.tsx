@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import styles from "./Search.module.css";
 import axios, { AxiosError } from "axios";
 import Header from "../Header/Header";
-
+import { MdOutlineRefresh } from "react-icons/md";
 
 type searchData = {
   id: string;
@@ -24,7 +24,7 @@ export default function Search() {
   const [error, setError] = useState<string|null>();
   const [loading,setLoading] = useState<boolean>(false)
 
-  const errorRefresh=(e:SyntheticEvent<HTMLDivElement>) => {
+  function errorRefresh():any {
     window.location.reload()
   }
 
@@ -85,23 +85,23 @@ export default function Search() {
           </span>
 
           { loading == true ? (`Loading...`): error? 
-          (<div className={styles.errorHandle} onError={errorRefresh} >
-            <h2>{searchWord} has no data!</h2>
+          (<div className={styles.errorHandle} > 
+            <button onClick={errorRefresh}>`{searchWord}` has no data!<br/> <MdOutlineRefresh className={styles.logo}/></button>
           </div> )  : (        
           <div className={styles.pokemonResult}>
             <div className={styles.pokemonData}>
-              <h2>#{searchData.id}</h2>
-              <h2>{searchData.name}</h2>
-            </div>
-            <div className={styles.searchResult}>
-              <img src={searchData.imageUrls[0]} />
-              <img src={searchData.imageUrls[1]} />
-              <img src={searchData.imageUrls[2]} />
-              <img src={searchData.imageUrls[3]} />
-            </div>
-            <div>
-              <h3>Type : {(searchData.typeOf)}</h3>
-            </div>
+                <h2>#{searchData.id}</h2>
+                <h2>{searchData.name}</h2>
+              </div>
+              <div className={styles.searchResult}>
+                <img src={searchData.imageUrls[0]} />
+                <img src={searchData.imageUrls[1]} />
+                <img src={searchData.imageUrls[2]} />
+                <img src={searchData.imageUrls[3]} />
+              </div>
+              <div>
+                <h3>Type : {(searchData.typeOf)}</h3>
+              </div>
           </div> 
           )}
         </div>

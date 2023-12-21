@@ -46,7 +46,7 @@ export default function Home() {
       ]})
   }
 
-  const capitalize = (str:string) => {
+  function capitalize(str:string){
     return `${str[0].toUpperCase()}${str.slice(1)}`
   }
 
@@ -58,12 +58,12 @@ export default function Home() {
     <>
       <div className={styles.body}>
         <Header/>
-        <div className={styles.aliceBlue}>        
+        <div className={styles.aliceBlue1}>        
           <div className={styles.pokemonSearchMenu}>
             <Search/>
           </div>
         </div>
-        <div className={styles.aliceBlue}>        
+        <div className={styles.aliceBlue2}>        
           <div className={styles.pokeTypeMenu}>
             {typeList.map((type) => (
               <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
