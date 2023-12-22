@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useState } from "react"
 import styles from './page.module.css'
 import './globals.css'
@@ -14,10 +13,9 @@ type pokemonName = {
   pokeImage:[string,string,string,string]
 }
 
-
 export default function Home() {
-  const [ typeList , setTypeList ] = useState<any[]>([])
-  const [ pokemonList,setPokemonList] = useState<any[]>([])
+  const [ typeList , setTypeList ] = useState<unknown[]>([])
+  const [ pokemonList,setPokemonList] = useState<unknown[]>([])
   const [ pokemonName,setPokemonName] = useState<pokemonName>()
 
 
@@ -65,7 +63,7 @@ export default function Home() {
         </div>
         <div className={styles.aliceBlue2}>        
           <div className={styles.pokeTypeMenu}>
-            {typeList.map((type) => (
+            {typeList.map((type:any) => (
               <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
                 {capitalize(type.name)}
               </button>
@@ -73,7 +71,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.pokeNameMenu}>
-          {pokemonList.map((list)=> (         
+          {pokemonList.map((list:any)=> (         
             <button  key={list.pokemon.name} className={styles.PokeList} onClick={()=>fetchPokemonName(list.pokemon.url)} >
               {capitalize(list.pokemon.name)}
             </button>
