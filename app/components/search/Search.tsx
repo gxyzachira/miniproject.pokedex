@@ -25,7 +25,9 @@ export default function Search() {
   const [loading,setLoading] = useState<boolean>(false)
 
   function errorRefresh():any {
-    window.location.reload()
+    setTimeout(() => {
+      window.location.reload()
+    },3000)
   }
 
   async function fetchPokemonData():Promise<void> {
@@ -72,7 +74,7 @@ export default function Search() {
                 setSearchWord(e.target.value);
               }}
             />
-            <button className={styles.clickSearch} 
+            {!error ? (<button className={styles.clickSearch} 
               disabled={loading}
               type="submit"
               onClick={async (e: React.MouseEvent<HTMLButtonElement>):Promise<void> => {
@@ -81,13 +83,20 @@ export default function Search() {
               }}
             >
               Search
-            </button>
+            </button>) :
+            (<button className={styles.clickSearch} 
+              disabled={loading}
+              type="submit"
+              onClick={errorRefresh()}
+            >
+              Search
+            </button>)}
           </span>
 
           { loading == true ? (`Loading...`): error? 
           (<div className={styles.errorHandle} > 
-            <button onClick={errorRefresh}>`{searchWord}` has no data.<br/>Reload here to search again.<br/> <MdOutlineRefresh className={styles.logo}/></button>
-          </div> )  : (        
+            <button onClick={errorRefresh}>`{searchWord}` has no data.<br/>Automatically Refresh...<br/> <MdOutlineRefresh className={styles.logo}/></button>
+          </div> )  :  (        
           <div className={styles.pokemonResult}>
             <div className={styles.pokemonData}>
                 <h2>#{searchData.id}</h2>
