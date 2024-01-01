@@ -1,10 +1,11 @@
 'use client'
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import styles from './page.module.css'
 import './globals.css'
 import Header from './components/Header/Header'
 import axios, { AxiosError } from "axios"
-import Search from "./components/search/Search"
+import Search from "./search/page"
 
 
 type pokemonName = {
@@ -56,9 +57,11 @@ export default function Home() {
     <>
       <div className={styles.body}>
         <Header/>
+        <Link href='/search' className={styles.searchPokemon}>
+          <h1>Search</h1>
+        </Link>
         <div className={styles.aliceBlue1}>        
           <div className={styles.pokemonSearchMenu}>
-            <Search/>
           </div>
         </div>
         <div className={styles.aliceBlue2}>        

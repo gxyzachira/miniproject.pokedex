@@ -1,9 +1,9 @@
 "use client";
 import React, { SyntheticEvent } from "react";
 import { useState, useEffect } from "react";
-import styles from "./Search.module.css";
+import styles from "./search.module.css";
 import axios, { AxiosError } from "axios";
-import Header from "../Header/Header";
+import Header from "../components/Header/Header";
 import { MdOutlineRefresh } from "react-icons/md";
 
 type searchData = {
@@ -13,7 +13,7 @@ type searchData = {
   typeOf: [string];
 };
 
-export default function Search() {
+export default function Search():JSX.Element {
   const [searchWord, setSearchWord] = useState<string>('Pikachu');
   const [searchData, setSearchData] = useState<searchData>({
     id: "",
@@ -62,6 +62,7 @@ export default function Search() {
 
   return (
       <>
+        <Header/>
         <div className={styles.body}>
           <h3>Search by Name or ID (ID No. 1 - 1017)</h3>
           <span className={styles.span}>
@@ -115,6 +116,5 @@ export default function Search() {
           )}
         </div>
       </>
-      
   );
 }

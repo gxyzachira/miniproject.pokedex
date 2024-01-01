@@ -4,6 +4,7 @@
   text-align: center;
   align-items: center;
   padding-bottom: 80px;
+  min-height:480px;
 }
 .body .aliceBlue1{
   background-color: aliceblue;
@@ -12,6 +13,19 @@
 .body .aliceBlue2{
   background-color: aliceblue;
   padding:0px 0px;
+}
+.searchPokemon{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+}
+.searchPokemon h1{
+  background-color: #000000;
+  padding: 10px;
+  display: inline-block;
+  font-size: 18px;
 }
 .pokemonData h2{
   display: flex;
@@ -113,6 +127,7 @@ div.pokemonResult{
   margin: 60px auto;
   padding: 20px;
   width: 600px;
+  height: 100%;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: rgba(3, 102, 214, 0.3) 0px 3px 3cap 3px;

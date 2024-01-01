@@ -1,12 +1,20 @@
-h1.pokedex{
+div.container{
     padding: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 48px;
+    font-weight: 600;
+    font-size: 22px;
     background-color: #CC0000;
     box-shadow: 3px 3px 3px black;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+div .pokedex{
+    text-decoration: none;
+    color: black;
+}
+div .home{
+    text-decoration: none;
+    color: black;
 }
