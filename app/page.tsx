@@ -1,11 +1,9 @@
 'use client'
-import Link from "next/link"
 import { useEffect, useState } from "react"
 import styles from './page.module.css'
 import './globals.css'
 import Header from './components/Header/Header'
 import axios, { AxiosError } from "axios"
-import Search from "./search/page"
 
 
 type pokemonName = {
@@ -57,29 +55,6 @@ export default function Home() {
     <>
       <div className={styles.body}>
         <Header/>
-        <Link href='/search' className={styles.searchPokemon}>
-          <h1>Search</h1>
-        </Link>
-        <div className={styles.aliceBlue1}>        
-          <div className={styles.pokemonSearchMenu}>
-          </div>
-        </div>
-        <div className={styles.aliceBlue2}>        
-          <div className={styles.pokeTypeMenu}>
-            {typeList.map((type:any) => (
-              <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
-                {capitalize(type.name)}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className={styles.pokeNameMenu}>
-          {pokemonList.map((list:any)=> (         
-            <button  key={list.pokemon.name} className={styles.PokeList} onClick={()=>fetchPokemonName(list.pokemon.url)} >
-              {capitalize(list.pokemon.name)}
-            </button>
-          ))}
-        </div>
         { pokemonName ? (
         <div className={styles.pokemonResult}>
           <div className={styles.pokemonData}>
@@ -94,6 +69,26 @@ export default function Home() {
           </div>
         </div>
         ) : (null)}
+        <div className={styles.aliceBlue1}>        
+          <div className={styles.pokemonSearchMenu}>
+          </div>
+        </div>
+        <div className={styles.aliceBlue2}>        
+        <div className={styles.pokeNameMenu}>
+          {pokemonList.map((list:any)=> (         
+            <button  key={list.pokemon.name} className={styles.PokeList} onClick={()=>fetchPokemonName(list.pokemon.url)} >
+              {capitalize(list.pokemon.name)}
+            </button>
+          ))}
+        </div>
+          <div className={styles.pokeTypeMenu}>
+            {typeList.map((type:any) => (
+              <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
+                {capitalize(type.name)}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   )}

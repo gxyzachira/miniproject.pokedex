@@ -1,14 +1,18 @@
 import styles from './Header.module.css'
 import Link from 'next/link'
-import Home from '@/app/page'
+import { FaSearch } from "react-icons/fa";
+
 
 export default function Header(){
 
     return(
         <>
             <div className={styles.container}>
-                <Link href={'/'} className={styles.home}>Home</Link>
-                <Link href={'/'} className={styles.pokedex}>PokeDex</Link>              
+                <Link href={'/'} className={styles.pokedex}>Pokedex</Link>
+                <Link href={'/search'} className={styles.search}>
+                    <FaSearch className={styles.pokeicon}/>
+                    Search from Name or Pokemon Id
+                </Link>              
             </div>
         </>
     )
