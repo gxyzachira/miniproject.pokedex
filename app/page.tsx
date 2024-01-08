@@ -43,6 +43,11 @@ export default function Home() {
       ]})
   }
 
+
+  function scrollUp(){
+     window.scrollTo(0, 0)
+  }
+
   function capitalize(str:string){
     return `${str[0].toUpperCase()}${str.slice(1)}`
   }
@@ -74,13 +79,6 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.aliceBlue2}>        
-        <div className={styles.pokeNameMenu}>
-          {pokemonList.map((list:any)=> (         
-            <button  key={list.pokemon.name} className={styles.PokeList} onClick={()=>fetchPokemonName(list.pokemon.url)} >
-              {capitalize(list.pokemon.name)}
-            </button>
-          ))}
-        </div>
           <div className={styles.pokeTypeMenu}>
             {typeList.map((type:any) => (
               <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
@@ -89,6 +87,16 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <ul className={styles.pokeNameMenu}>
+          {pokemonList.map((list:any)=> (         
+            <li key={list.pokemon.name}>
+              <button  className={styles.PokeList}
+                onClick={()=>fetchPokemonName(list.pokemon.url)}>
+                  {capitalize(list.pokemon.name)}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   )}

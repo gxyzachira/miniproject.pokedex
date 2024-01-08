@@ -92,7 +92,7 @@ div .pokedex {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 24px;
   padding: 15px;
   border-radius: 16px;
 }
@@ -101,7 +101,7 @@ div .search {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   padding: 20px;
   border-radius: 16px;
   margin-top: 10px;
@@ -127,7 +127,7 @@ div .search {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     padding: 15px;
     border-radius: 16px;
   }
@@ -136,8 +136,8 @@ div .search {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 14px;
-    padding: 20px;
+    font-size: 12px;
+    padding: 15px;
     border-radius: 16px;
     margin-top: 10px;
   }
