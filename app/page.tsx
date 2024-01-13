@@ -44,10 +44,6 @@ export default function Home() {
   }
 
 
-  function scrollUp(){
-     window.scrollTo(0, 0)
-  }
-
   function capitalize(str:string){
     return `${str[0].toUpperCase()}${str.slice(1)}`
   }
