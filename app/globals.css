@@ -408,7 +408,7 @@
 @media only screen and (max-width: 480px){
   .bug {
     background-color: #A6B91A;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -422,7 +422,7 @@
   }
   .dragon{
     background-color: #6F35FC;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -436,7 +436,7 @@
   }
   .fairy{
     background-color: #D685AD;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -450,7 +450,7 @@
   }
   .fire{
     background-color: #EE8130;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -465,7 +465,7 @@
 
   .ghost{
     background-color:#735797;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -479,7 +479,7 @@
   }
   .ground{
     background-color:#E2BF65;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -493,7 +493,7 @@
   }
   .normal{
     background-color: #A8A77A;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -507,7 +507,7 @@
   }
   .psychic{
     background-color: #F95587;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -521,7 +521,7 @@
   }
   .steel{
     background-color: #B7B7CE;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -535,7 +535,7 @@
   }
   .dark{
     background-color: #705746;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -549,7 +549,7 @@
   }
   .electric{
     background-color: #F7D02C;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -563,7 +563,7 @@
   }
   .fighting{
     background-color: #C22E28;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -577,7 +577,7 @@
   }
   .flying{
     background-color: #A98FF3;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -591,7 +591,7 @@
   }
   .grass{
     background-color: #7AC74C;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -605,7 +605,7 @@
   }
   .ice{
     background-color: #96D9D6;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -619,7 +619,7 @@
   }
   .poison{
     background-color: #A33EA1;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -633,7 +633,7 @@
   }
   .rock{
     background-color: #B6A136;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -647,7 +647,7 @@
   }
   .water{
     background-color: #6390f0;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     text-decoration: none;

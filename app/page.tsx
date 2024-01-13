@@ -71,18 +71,9 @@ export default function Home() {
         </div>
         ) : (null)}
         <div className={styles.aliceBlue1}>        
-          <div className={styles.pokemonSearchMenu}>
-          </div>
+          <div className={styles.pokemonSearchMenu}></div>
         </div>
         <div className={styles.aliceBlue2}>        
-          <div className={styles.pokeTypeMenu}>
-            {typeList.map((type:any) => (
-              <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
-                {capitalize(type.name)}
-              </button>
-            ))}
-          </div>
-        </div>
         <ul className={styles.pokeNameMenu}>
           {pokemonList.map((list:any)=> (         
             <li key={list.pokemon.name}>
@@ -93,6 +84,14 @@ export default function Home() {
             </li>
           ))}
         </ul>
+          <div className={styles.pokeTypeMenu}>
+            {typeList.map((type:any) => (
+              <button key={type.name}  className={type.name} onClick={() => fetchPokemonType(type.url)}>
+                {capitalize(type.name)}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   )}
